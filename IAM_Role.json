@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sqs:DeleteMessage",
+                "s3:GetObject",
+                "sqs:GetQueueUrl",
+                "logs:CreateLogStream",
+                "dynamodb:PutItem",
+                "sqs:ReceiveMessage",
+                "sqs:SendMessage",
+                "sqs:GetQueueAttributes",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:sqs:*:sqs대기열:*",
+                "arn:aws:dynamodb:*:항목 저장할 당신의 Dynamo DB/*",
+                "arn:aws:s3:::당신의 원본 버켓/*",
+                "arn:aws:logs:*:*:*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:PutObject",
+            "Resource": "썸네일 이미지 저장 버킷/*"
+        }
+    ]
+}
