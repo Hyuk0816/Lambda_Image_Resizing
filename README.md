@@ -81,7 +81,7 @@ URL 경로 파라미터를 사진과 같이 추가해준다
 ### 2-15. DynamoDB 테이블 확인 
 ![image](https://user-images.githubusercontent.com/88131652/227579805-bddf35fe-63ec-44da-b8c2-8570841cdb2b.png)
 
-##3. 느낀점 
+## 3. 느낀점 
 
 - 정말 많은 오류를 마주쳤다,, 특히 **Pillow** 오류는 진짜 몇일 동안 구글링 해서 찾아냈다! 
 - 403 Deny : IAM 권한과 역할 설정을 다시 체크할 것! or Lambda 함수 환경 변수에 유효한 IAM Access Key와 Secret Key인지 확인 할 것 
